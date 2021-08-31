@@ -8,7 +8,7 @@ import styles from './header.module.css';
 export default function Header({ email }) {
   const [session, loading] = useSession();
 
-  if (session) console.log(session.user);
+  // if (session) console.log(session.user);
 
   return (
     <header>
@@ -93,6 +93,13 @@ export default function Header({ email }) {
               <a>API</a>
             </Link>
           </li>
+          {session && (
+            <li className={styles.navItem}>
+              <Link href="/usuarios">
+                <a>Usuarios</a>
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </header>

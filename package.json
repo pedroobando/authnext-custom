@@ -20,6 +20,7 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "next": "^11.0.0",
     "next-auth": "latest",
     "react": "^17.0.2",

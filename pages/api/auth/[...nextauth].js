@@ -84,7 +84,7 @@ export default NextAuth({
   // https://next-auth.js.org/configuration/options#jwt
   jwt: {
     // A secret to use for key generation (you should set this explicitly)
-    secret: process.env.SECRET_JWT,
+    secret: process.env.SECRET_KEY,
     // signingKey: {
     //   'kty': 'oct',
     //   'kid': 'UoWTmoyD1rBBqp-IhJ8QaPk4WBDKAgU0L9zB-DjPgFY',
